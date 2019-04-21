@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Frame of a page(HTML)
+</title></head>
+<body>
+<font size="7"face="Monotype Corsiva"><p align="center">Frame</p></font>
+<p><b>A</b> Framed psge is actually made up of multiple HTML pages. There is one HTML Document that
+describe how to break up the single browser window into multiple windowspan. Each windowspan is filled
+with an HTML document.</p>
+<center><img src="fr.bmp"width="450"></center>
+<p><b>I</b>t is a picture which shows a framed page. Where the page contains three pages. To create a framed page we use the tag &lt FRAMESET &gt.
+This tag is placed in the HTML document before the &lt BODY &gt elements. The &lt FRAMESET &gt describe the amount of screen
+real estate given to each windspan by deviding the screen into ROWS or CILS. The &lt FRAMESET &gt will then contain &lt FRAME &gt elements, one per division of the browser window.
+The code of what use to create a framed page are follows,</p>
+<table align="center">
+<tr>
+<td width="550">
+<b>
+&lt HTML &gt<br/>
+&lt HEAD  &gt<br/>
+&lt TITLE  &gtFramed Page &lt /TITLE  &gt<br/>
+&lt /HEAD  &gt<br/>
+&lt FRAMESET CILS = "20%,80% "  &gt<br/>
+&lt FRAME SRC="doc1.html" NAME="first" SCROLLING ="no"  &gt<br/>
+&lt FRAMESET ROWS = "15,* "  &gt<br/>
+&lt FRAME SRC="doc2.html" NAME="second" SCROLLING ="no"  &gt<br/>
+&lt FRAME SRC="doc3.html" NAME="third" SCROLLING ="yes"  &gt<br/>
+&lt /FRAMESET &gt<br/>
+&lt NOFRAMES  &gt<br/>
+&lt BODY  &gt<br/>
+<font color="BLUE"size="2">&lt!--Document for browsers that do not support framed--&gt</font><br/>
+&lt /BODY  &gt<br/>
+&lt /NOFRAMES  &gt<br/>
+&lt /FRAMESET  &gt<br/>
+&lt /HTML  &gt<br/>
+</b></td></tr></table>
+<p><b>A</b>t first we devide column basis and then we devide row basis. Befour describing the attributes of &lt FRAMESET &gt and &lt FRAME &gt we like to talk about &lt NOFRAMES &gt
+tag. If the browser in old version or any how it don't support the &lt FRAME & gt then it ignors the &lt FRAMESET &gt tags and go inside of the &lt BODY &gt.
+Hear you can write something or you can inform him about it.</p>
+<h2 align="center">Attributes of &lt FRAMESET &gt</h2>
+<p>
+<b>Frameborder : </b>Possible values 0,1, YES, NO. A setting of zero will create a borderless frame.<br/>
+<b>Framespacing : </b>Create space between two frame. It contains the values in pixel. Value zero declar no space between frames. <br/>
+<b>Border : </b>Possible values 0,1,. A setting of zero will create a borderless frame.<br/>
+<b>Bordercolor : </b>This attributes is allows uoy choose a color for frame border. This attribute is realy used.<br/>
+</p>
+<h2 align="center">Attributes of &lt FRAME &gt</h2>
+<p>
+<b>SRC : </b>Required, as it provides the URL for the page that will be displayed in the frame.<br/>
+<b>Name : </b>Required for frame name that allow targeting by other HTML documents. <br/>
+<b>Scrolling : </b>Displays a scroll bar(s) in the frame. Possibal values are yes (Always
+display scroll bars), no (Never display scroll bars), auto (browser will decide based on frame contents). The default value is auto.<br/>
+<b>Marginwidth : </b>Optional attribute stated in pixel. Determines horizontal space between
+the &lt FRAME &gt contents and the frame borders.<br/>
+<b>Marginheight : </b>Optional attribute stated in pixels. Determines vertical space between the &lt FRAME &gt contents and the frame's border.<br/>
+<b>Noresize : </b>optional - prevents viewers from resizing the frame.<br/>
+</p>
+<h1 align="center">TARGETS</h1>
+<p><b>W</b>hen you are creating links for use in a frames environment you will need to specify an additional attribute called TARGET. The TARGET attribute
+uses the NAME attribute of the FRAME element.The code to create link in framed page<font color="blue">
+&lt A HREF = "page-name.extention" TARGET="frame-name " &gt</font>What show in browser <font color="blue">&lt /A &gt</font>.
+If we fail to declar target then page will open in current page. The frame name and target is case sencative. The TARGET has followings elements.<br/>
+<br/><b>&lt A &gt :</b> Sample - &lt A HREF ="file.html" TARGET ="frame -window-name" &gt
+<br/><b>&lt AREA &gt :</b> Sample - &lt AREA SHAPE ="rect" COORDS="5,6,2,4" HREF ="file.html" TARGET ="Frame-window-name" &gt
+<br/><b>&lt BASE &gt :</b> Sample - &lt BASE TARGET ="Frame-window-name" &gt
+<br/><b>&lt FORM &gt :</b> Sample - &lt FORM ACTION = "cgi-bin/script" TARGET = "Frame-window-name" &gt
+</p>
+<h2 align="center">Special Target</h2>
+<p><b>T</b>here are four types of special target names that cannot be assigned by the name attribute of the FRAME tag.
+Each of these reserved names serves a special function when used with the TARGET attribute.
+These special names and functions are:</p>
+<p>
+<b>TARGET="_top" : </b>This loads the linked gocument into the full browser window with the URL specified by the HREF attribute. This is particulary useful for moving between a frames enviorment ant non-frames environment.<br/>
+<b>TARGET="_blank" : </b>Opens a new browser window and loads the document specified in the URL attribute into that new window. The window is not named.<br/>
+<b>TARGET="_self" : </b>Loads the document in the same window where the anchor was {CLICKED}. This is the default setting for linking elements.<br/>
+<b>Target="_parent" : </b>The _parent frame is a prior frameset that the current frameset was "spawned" from. If there isn't one then it is the browser window.<br/>
+</p>
+<table align="center"border="1">
+<caption><b>Code of Special Target</b></caption>
+<tr>
+<td width="550">
+&lt A HREF ="doc.html" TARGET="_top" &gt Document in top &lt /A &gt<br/>
+&lt A HREF ="doc.html" TARGET="_blank" &gt Document in blank &lt /A &gt<br/>
+&lt A HREF ="doc.html" TARGET="_self" &gt Document in self &lt /A &gt<br/>
+&lt A HREF ="doc.html" TARGET="_top" &gt Document in parent &lt /A &gt<br/>
+&lt A HREF ="doc.html" TARGET="_parent" &gt Document in parent &lt /A &gt<br/>
+</td>
+</tr>
+</table>
+<br/>
+<hr color="Black"/>
+<p align="right"><a href="hsound.html"><font size="4">Next Chapter</font></a></p>
+</body>
+</html>

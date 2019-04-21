@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>List in HTML
+</title></head>
+<body>
+<font size="7"face="Monotype Corsiva"><p align="center"><u>List</u></p></font>
+<p><b>L</b>ist is an important items of web page designing. If we Browse a site then we must 
+meet with list there. List is basicaly a set of related item. Three type of list we get heat.
+<b>Unorderd List</b>, <b>Ordered List</b>, <b>Defination List</b>. List also can be nested type. 
+All the types are follows.</p>
+<H2 align="center">Unordered List</h2>
+<p><b>U</b>l ( Unordered list ) : Items in this list start with a list mark such as a 
+bullet. Browsers will usually change the list marks in nested lists. Li is the list item.Ul has three basic 
+types. Disc is default. Other two is Circlr and Square.</p>
+<p align="center">
+<table border="1">
+<tr>
+<td width="275">&lt UL TYPE = "SQUARE" &gt<br/>
+&lt Li &gtFirst Item &lt /Li &gt<br/>
+&lt Li &gtSecond Item &lt /Li &gt<br/>
+&lt Li &gtThird item &lt /Li &gt<br>
+&lt /UL &gt
+</td>
+<td width="275">
+<ul type="square">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ul>
+</td>
+</tr>
+</table>
+</p>
+<H2 align="center">Ordered List</h2>
+<p><b>O</b>l, ( Ordered list ) : Items in this list are numbered automaticaly by the browser.
+You have the choice of setting TYPE attribute to one of five numbering style. Those are
+<b>1</b> ( 1, 2, 3, 4, 5, ....... ),  <b>a</b> ( a, b, c, d, e, ........ ),  <b>A</b> ( A, B, C, D, E, ... ),  <b>i</b> ( i, ii, iii, iv, v, ......... ),
+ <b>I</b> ( I, II, III, IV, V, ... ). Another attributes START is also use with ordered list. It contains the value of starting.
+</p>
+
+<p align="center">
+<table border="1">
+<tr>
+<td width="275">&lt OL TYPE = "1" START="5" &gt<br/>
+&lt Li &gtFirst Item &lt /Li &gt<br/>
+&lt Li &gtSecond Item &lt /Li &gt<br/>
+&lt Li &gtThird item &lt /Li &gt<br>
+&lt /OL &gt
+</td>
+<td width="275">
+<ol type="1"start="5">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ol>
+</td>
+</tr>
+</table>
+</p>
+<H2 align="center">Defination List</h2>
+<p><b>D</b>L, ( Defination List ) : This kind of list is different from the others. Each
+item in a DL consists of one or more Deffination terms (DT) followed by one or more Defination descriptions (DD).</p>
+<p align="center"><table border="1"><tr>
+<td width="300">
+&lt DL &gt<br/>
+&lt DT &gt HTML: &lt /DT &gt<br/>
+&lt DD &gt Hyper Text Markup Language &lt /DD &gt<br/>
+&lt DT &gt CSS: &lt /DT &gt<br/>
+&lt DD &gt Cascading Style Sheet &lt /DD &gt<br/>
+&lt /DL &gt
+</td>
+<td width="250">
+<dl>
+<dt>HTML:<dt>
+<dd>Hyper text Markup Language</dd>
+<dt>CSS:<dt>
+<dd>Cascading Style Sheet</dd>
+</dl>
+</td>
+</tr></table></p>
+<H2 align="center">Nested List</h2>
+<p><b>N</b>ested list means list in a list. If we use a list in a list item then a nested 
+list will created. All types of list ( <b>UL</b>, <b>OL</b>, <b>DL</b> ) can take a part in a 
+nested list.</p>
+
+
+<p align="center"><table border="1"><tr>
+<td width="300">
+&lt Ul TYPE="circle"&gt<br/>
+&nbsp;&lt li &gt Programming : &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt Ol TYPE="1"&gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt C &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt C++ &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt Visual Basic &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt OL TYPE = "a" &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt VB &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt VB.net &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt /OL &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt /Ol &gt<br/>
+&nbsp;&lt li &gt Web-page Design: &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt Ol TYPE="A"&gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt HTML &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt CSS &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt Java Script &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt /Ol &gt<br/>
+&nbsp;&lt li &gt Graphics &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt Ol TYPE="i"&gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt Photoshop &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt Ilastrator &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt li &gt Flash &lt /li &gt<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt /Ol &gt<br/>
+&lt /Ul &gt
+</td>
+<td width="250">
+<ul type="circle">
+<li>Programming:</li>
+<ol type="1">
+<li>C</li>
+<li>C++</li>
+<li>Visual Basic</li>
+<ol type="a"><li>VB</li><li>VB.net</li></ol>
+</ol>
+<li>Web-page Designing:</li>
+<ol type="A">
+<li>HTML</li>
+<li>CSS</li>
+<li>Java Script</li>
+</ol>
+<li>Graphics:</li>
+<ol type="i">
+<li>Photoshop</li>
+<li>Ilastrator</li>
+<li>Flash</li>
+</ol>
+</ul>
+</td>
+</tr></table></p>
+
+<hr color="Black"/>
+<p align="right"><a href="hlink.html"><font size="4">Next Chapter</font></a></p>
+
+</body>
+</html>

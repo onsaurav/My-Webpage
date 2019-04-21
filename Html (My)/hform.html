@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>hform</title></head>
+<body>
+<font size="7"face="Monotype Corsiva"><p align="center"><u>Form</u></p></font>
+<p><b>N</b>ow we can create a page with text, image and table. We also can add the list and create link in
+a page. But if we need to get openion to user what can i do then. Suppose a user who visite my site want to give a order of
+product what's advertisment i give in the site. What will be happening. Nothing to sorrow! We can create form
+where the client can give his information. So user can give his information by this form and it is the reason why the 
+communication grows up into the world.</p>
+<hr>
+<p><b>T</b>he basic tag of creating a form is &lt FORM & gt &lt /FORM &gt. This form tag has some attributes like <b>action,
+method, enctype, name, target etc.</b></p>
+<p><b>Action : </b>It is the URL of the CGI( Common Geteway Interface ) program that is going to accept the data from the form, process it,
+and send a response back to the browser.</p>
+<p><b>Method : </b>GET (default) or POST specifies which HTTP method will be used to send the form's contents to the web server. The CGI application should be written to
+accept the data from either method.</p>
+<p><b>Enctype : </b>detrmines the mechanism used to encode the form contents. you can live this attribute as default unless you are creating a file upload field.</p>
+<p><b>Name : </b>is a form name used by VB or Java script.</p>
+<p><b>Target : </b>is the target frame where the response page will show up.</p>
+<hr/><p><b>F</b>orm elements have properties : text boxes, Password boxes, Checkboxes, option ( Radio ) buttons, Submit, Reset, File, Hidden and Image.
+This properties are specified in the TYPE attribute of the HTML element &lt INPUT &gt &lt /INPUT &gt.</p>
+<table align="center"border="1">
+<tr>
+<td width="550">
+<b><center>&lt INPUT &gt ELEMEN'S PROPERTIES</center></b>
+</td></tr>
+<tr>
+<td width="550">
+<b>TYPE </b>= Type of input
+</td></tr>
+<tr>
+<td width="550">
+<b>Name </b>= Variable name passed to CGI application
+</td></tr>
+<tr>
+<td width="550">
+<b>VALUE </b>= The data associated with the variable name to be passed to the CGI application
+</td></tr>
+<tr>
+<td width="550">
+<b>CHECKED </b>= Button/box checked by default
+</td></tr>
+<tr>
+<td width="550">
+<b>SIZE </b>= Number of characters in text field
+</td></tr>
+<tr>
+<td width="550">
+<b>MAXLENGTH </b>= Maximum number of characters accepted
+</td></tr>
+</table>
+<br/>
+<hr>
+<br/>
+<h4 align="center">All the attributer use inside of &lt form  action = " " Method = " "&gt &lt /form &gt</h4>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Text Box</font></h3>
+<p><b>Name : </b> The name of text box what is use to identified it.
+<br/><b>Size : </b>  Size of the text box.
+<br/><b>Value : </b> What will show inside the text box.
+<br/><b>Maxlength  : </b> The maximum length of the text box. 
+<br/>So the code of a text box is (code must be in &lt form &gt &lt /form &gt tag) <br/><b> &lt INPUT TYPE = 
+" text " NAME = " textname " SIZE = " 25 " VALUE = " " MAXLENGTH = "50" &gt.</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Text Box</font></td>
+<td><input type="text"name="t-name",value=" "size="50"maxlength="75"></td>
+</tr>
+</center>
+</form>
+<br/>
+<br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Checkbox Box</font></h3>
+</center>
+<p><b>Name : </b> The name of Cheack box what is use to identified it.  
+<br/><b>Value : </b> What will show for the shecked box.
+<br/><b>Checked : </b>Used to show the eliments checked.
+<br/>The code of the check box is 
+<br/><b> &lt INPUT TYPE = " Cheackbox " NAME = " chname " VALUE = " Undergraduate" &gt.</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Cheack Box</font></td>
+<td><input type="checkbox"name="c-name",value=" Unger Graduate">Pre Graduate &nbsp<input type="checkbox"name="c-name",value="Graduate"checked>Graduate&nbsp<input type="checkbox"name="c-name",value=" Post Graduate">Post Graduate</td>
+</tr>
+</center>
+</form>
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of radio</font></h3>
+<p><b>Name : </b> The name of Radio what is use to identified it.  
+<br/><b>Value : </b> What will show for the radio box.
+<br/><b>Checked : </b>Used to show the eliments checked.
+<br/>The code of the check box is 
+<br/><b> &lt INPUT TYPE = " Radio " NAME = " rname " VALUE = " mail" &gt.Mail</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Radio</font></td>
+<td><input type="radio"name="r-name",value=" Mail"checked>Mail &nbsp<input type="radio"name="r-name",value="femail">Femail &nbsp<input type="radio"name="r-name",value=" child">Child</td>
+</tr>
+</center>
+</form>
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Password Box</font></h3>
+<p><b>Name : </b> The name of password box what is use to identified it), 
+<br/><b>Size : </b>  Size of the password box.
+<br/><b>Value : </b> What will show inside the password box box.
+<br/><b>Maxlength  : </b> The maximum length of the password box. 
+<br/>So the code of a password box is <br/><b> &lt INPUT TYPE = 
+" password " NAME = " pasname " SIZE = " 25 " VALUE = " *** " MAXLENGTH = "50" &gt.</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Password Box</font></td>
+<td><input type="password"name="p-name"value=" ******* "size="35"maxlength="50"></td>
+</tr>
+</center>
+</form>
+</center>
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of File Upload Box</font></h3>
+<p><b>Name : </b> The name of File upload box what is use to identified it. 
+<br/><b>Size : </b>  Size of the file upload box.
+<br/><b>Enctype : </b>It is a list of (MIME) types that the fieldcan be used to upload.
+<br/><b>Maxlength  : </b> The maximum length of the file upload box. 
+<br/>So the code of a File upload box is <br/><b> &lt INPUT TYPE = 
+" file " NAME = " filename " SIZE = " 35 " maxlength="50"enctype=" " accept="image/*"&gt.</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">File Upload Box</font></td>
+<td><input type="file"name="f-name",size="50"maxlength="75"accept="image/*"></td>
+</tr>
+</center>
+</form>
+
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Button</font></h3>
+<p><b>Name : </b> The name of Button what is use to identified it.  
+<br/><b>Value : </b> What will show for the Button box.
+<br/>The code of the submit is 
+<br/><b> &lt INPUT TYPE = " Button " NAME = " butt " VALUE = " Click me"&gt</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Button</font></td>
+<td><input type="button"name="butt"value=" Click Me"></td>
+</tr>
+</center>
+</form>
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Submit</font></h3>
+<p><b>Name : </b> The name of Submit Button what is use to identified it.  
+<br/><b>Value : </b> What will show for the Submit Button.
+<br/>The code of the Submit button is 
+<br/><b> &lt INPUT TYPE = " submit " NAME = " sub " VALUE = " Submit"&gt</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Submit Button</font></td>
+<td><input type="submit"name="sub"value=" Submit the form"></td>
+</tr>
+</center>
+</form>
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of reset Button</font></h3>
+<p><b>Name : </b> The name of Reset Button what is use to identified it.  
+<br/><b>Value : </b> What will show for the Reset Button.
+<br/>The code of the reset button is 
+<br/><b> &lt INPUT TYPE = " Reset " NAME = " res " VALUE = " Reset"&gt</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Reset Button</font></td>
+<td><input type="Reset"name="reset"value="Reset the form"></td>
+</tr>
+</center>
+</form>
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of text Area</font></h3>
+<p><b>Name : </b> The name of text Area what is use to identified it.  
+<br/><b>rows : </b> Number of rows which the text area contains.
+<br/><b>colss : </b> Number of columns which the text area contains.
+<br/><b>wrap : </b> defaults is OFF, another two is VIRTUAL/PHYSICAL. Browser display the text as surfer types 
+<br/>The code of the textarea is 
+<br/><b>&lt Textarea cols="45"rows="5"warps="off" &gt &lt /Textarea &gt</b> </p>
+<form>
+<center>
+<tr>
+<td><font color="green">Example of Text Area</font></td>
+<td><textarea cols="45"rows="5"> Type your text hear </textarea></td>
+</tr>
+</center>
+</form>
+
+
+<br/><br/>
+<h3 align="center"><font color="#0000bb">Example and Attributes of Select</font></h3>
+<p><b>Name : </b> The name of select what is use to identified it.  
+<br><b>Size : </b> Indecate of the number of elements which show.If it is one then the select will be one way.
+<br><b>Multiplr :</b>To secelect multiple elements. </b>   
+<br/><b>Option : </b> Elements of select are described in this way. It has a attributes value. which contains the value of selection
+<br/>The code of the reset button is</p> 
+<br/><table align="center"><b> &lt SELECT Name ="cource"size="1" &gt <br/>
+&lt OPTION &gt Computer Science &lt /OPTION &gt<br/>
+&lt OPTION &gt Medical &lt /OPTION &gt<br/>
+&lt OPTION &gt BBA &lt /OPTION &gt<br/>
+&lt /SELECT &gt</b></table> 
+<form>
+<table align="center"border="1">
+<tr>
+<th><font color="green">As a Combo</font></th>
+<th><font color="green">As a List</font></th>
+</tr>
+<tr>
+<td width="275">
+<select name="Department"size="1" align="center">
+<option>Computer Science</option>
+<option>Electrial Enginearing</option>
+<option>Medical</option>
+<option>Pharmachy</option>
+<option>BBA</option>
+</select>
+</td>
+<td width="275">
+<select name="Semister"size="3"align="center">
+<option>Programming</option>
+<option>Web-page Designing</option>
+<option>Networking</option>
+<option>Batabase</option>
+<option>Multimedia & Animation</option>
+</select>
+</td>
+</tr>
+</table>
+</center>
+</form>
+</font>
+<br/>
+<p><b>S</b>o, again we see the a normal form code. &lt Form action ="url" method="post" &gt
+&lt Input type = "  " name = " " Value =" "&gt size = " " Maxlength = " " &gt. A normal form code with action where the data 
+process as a mail. &lt Form method = "post" action = " mailto : sauravcs@yahoo.com " &gt</p>
+<hr color="Black"/>
+<p align="right"><a href="hframe.html"><font size="4">Next Chapter</font></a></p>
+
+</body>
+</html>

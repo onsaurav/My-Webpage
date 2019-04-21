@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Sound & Movie(HTML)
+</title></head>
+<body>
+<font size="7"face="Monotype Corsiva"><p align="center"><u>Sound and Movies</u></p></font>
+<p><b>W</b>e can use movie (vedio), animation or audio file in our page. But that types of file is large 
+type. So we need extra care to use that. Becouse if our page will so large then it create a probleme to load.
+what wast our time. So some format can easily loaded in the document like .AVI, .MPEG, .QT etc. Animation and Flash movie also 
+added with a page.</p>
+<p><b>S</b>uppose we want to a video and an audio file in our site. the name of vedio file is (f.mpeg) and the name of 
+the audio file is (o.mp3). then the code is:</p>
+<table align="center"border="1">
+<tr><td width="550">
+&lt EMBED SRC="f.mpeg/o.mp3" WIDTH="250"HEIGHT="200"AUTOSTART="true"SHOWCONTROLS="true" ALIGN="left"&gt
+</td></tr>
+<tr><td width="550">
+<center><font color="blue"size="3">OR</font></center>
+&lt IMG BORDER="0" DYNSRC="f.mpeg/o.mp3" START="fileopen" WIDTH ="250" HEIGHT="200" &gt
+</td></tr>
+</table>
+<p>
+<b>EMBED : </b>Used to add animation or vedio or audio file on the page.<br/>
+<b>SRC : </b>Detecting the source of the file.<br/>
+<b>WIDTH : </b>Contains the value of the file width.<br/>
+<b>HEIGHT : </b>Contains the value of the file height.<br/>
+<b>AUTOSTART : </b>If its value is true then the file will start when you open this page.<br/>
+<b>SHOWCONTROL : </b>Use to showing control in the page.<br/>
+<b>ALIGN : </b>Used to select file alignment.<br/>
+<hr/>
+<b>IMG BORDER: </b>Use to add file and select border value like 0,1, 2 etc.<br/>
+<b>DYNSCR : </b>It indecate the dynamic path of the file. Hear youdeclar the file name with extention.<br/>
+<b>START : </b>It is used to start the file. it value like "fileopen".<br/>
+</p>
+<p><b>A</b>nimation movie are also add in this way. Suppose we want to add a flash movie
+ then We dont use SHOWCONTROL attribute. The code will be:</p>
+<table border="1"align="center">
+<tr>
+<td width="550">&lt EMBED SRC = "file.extention" WIDTH ="150"height="200" AUTOSTART="true"&gt
+</td>
+</tr>
+</table>
+<br/>
+<hr color="Black"/>
+<p align="right"><a href="hExtra.html"><font size="4">Next Chapter</font></a></p>
+
+</body>
+</html>

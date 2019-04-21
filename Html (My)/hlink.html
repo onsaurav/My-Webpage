@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>Link in HTML
+</title></head>
+<body>
+<font size="7"face="Monotype Corsiva"><p align="center"><u>Link</u></p></font>
+<p><b>T</b>oday web page is the best way to comunicate with the world. But it is possibal for linking.
+Without link we can't think about a webpage. The main tag of link is &lt A &gt. Which called anchor tag. 
+this tag has HERF attributes. HERF contains the name of linking parts. &lt /A &gt is the closing of this tag. 
+What we write inside of this two tags that will show in the docoment. We devide the links in two types.</p>
+<p align="center">
+<table>
+<tr><td>
+<ul type="circle">
+<li>Internal Links ( <font color="GREEN">Link what use for Internal linking </font>)</li>
+<li>External Links ( <font color="GREEN">Link what use for External linking </font>)</li>
+</ul>
+</td></tr></table></p>
+<h2 align="center">Internal Link</h2>
+<p><b>I</b>n ternal means link in same site. When we create a link in the corrosponding page
+or with another page of this site then its called enternal link. It also has some parts.
+Link with another page what is in this folder, Link with a page what are not in this folder, 
+Link in the same page. In same page link, we declar a name then create a link with that.
+</p>
+<p align="center">
+<table border="1">
+<tr>
+<td width="150">
+Link with a page of same folder
+</td>
+<td width="425">
+&lt A HERF = " file name . extention " &gt <font color="blue">link text what show</font> &lt /A &gt
+</td>
+</tr>
+<tr>
+<td width="150">
+Link with a page what are in different page.
+</td>
+<td width="425">
+&lt A HERF = " folder name\file name . extention " &gt <font color="blue">Link text</font> &lt /A &gt
+</td>
+</tr>
+<tr> 
+<td width="150">
+Link in the same page.
+</td>
+<td width="425">
+&lt A NAME = " #Name " &gt <font color="green">Name of paragraph what show</font> &lt /A &gt<br/>
+&lt A NAME = " Name " &gt <font color="blue">Name of link what show </font> &lt /A &gt<br/>
+</td></tr></table></p>
+
+<h2 align="center">External Link</h2>
+<p><b>E</b>xternal link is that where we create a link with anothere site or something what is not related with it.
+To link with a web-site or mail number we use this type of link.
+</p>
+<p align="center"><table border="1"><tr>
+<td>Link with Mail Number</td>
+<td>&lt A HERF=" mailto : sauravcs@yahoo.com " &gt <font color="blue">Name of the link</font> &lt /a  &gt</td>
+</tr>
+<tr>
+<td>Link with Web-site</td>
+<td>&lt A HERF=" http://www.Sworld.com " &gt <font color="blue">Name of the link</font> &lt /a  &gt</td>
+</tr>
+</table></p>
+<p><b>C</b>olor of link, active link, vesited link can be defined by a designer with body tag.
+like <font color="green">&lt Body link = " blue " alink = " pink " vlink = " green " &gt</font>. Link contains the value of link color. Alink contains the
+color of active link and vlink contains the color of vesited link.</p>
+<h2 align="center">Link with an Image</h2>
+<p><b>L</b>ike the text we can also use an image to link. If we click on that image then it shows the
+linking page. It is not so hard but as like as previous link. Suppose we want to link with a page which name is 
+Cricket.html. Then the code will be</p>
+<table border="1"align="center"><tr><td width="550" align="center">
+&lt A HERF = " Cricket.html " &gt <font color="blue">Image file name . Extention</font> &lt /A &gt
+</td></tr></table>
+<h3 align="center">Different parts of an image can create link with different pages (Maping).</h3>
+
+<p><b>N</b>ow we descouse a process which allows us to create a different links by the different place of same image.
+To create this we need a special tag <b>&lt MAP &gt</b>. At first we give the name of the map. Then we the image in some
+area coords. We create link with this area coords. The followings table shows the code of this maping.</p>
+<table border="1"align="center">
+<tr>
+<td width="575">
+&lt MAP NAME = "Mapname "&gt<br/>
+&lt AREA COORDS = " 0,0,75,50 " HREF = " Intro.html " SHAPE = " Rect " ALT = " Introduction " &gt<br/>
+&lt AREA COORDS = " 0,100,50 " HREF = " Backg.html " SHAPE = " Circ " ALT = " Background " &gt<br/>
+&lt /MAP &gt<br/>
+&lt IMG SRC = " File name . extention " width = "350" height = "400" USEMAP = " #Mapname " BORDER = " 0 " /&gt <br/>
+</td>
+</tr>
+</table>
+<p><b>Mapname : </b> Use to give the map name. It can be a, b, x, y, Saharukh, Aisharya etc. When we add the image then that image use this mapname.</p>
+<p><b>Area Coords : </b> It declar to devide the image area in to some parts. we see in the coading ( 0, 0, 75, 50 ), ( 0, 100, 50 ). The area devide basis of that values.
+Four degites for rectangle and three degites for circle.</p>
+<p><b>Shape : </b>It is the shape of linked area. It contains the value like RECT, CRIC etc. When you click on that link then you will see that shape.</p>
+<p><b>Alt : </b>When you visite on the image if you reached on the linked area then you see that text what you write in alt.</p>
+<h4>Example of a image which linked with different pages</h4>
+<center>
+<map name="x">
+<area coords="0,0,100,75"href="hf2.html"shape="rect"alt="Introduction">
+<area coords="165,180,75"href="htext.html"shape="circ"alt="Text">
+</map>
+<img src="ganguly.jpg"usemap="#x"border="1">
+</center>
+<p><b>H</b>ear you see an image of Saurav Ganguly. If you click on the left,top corner then you can visite the Introduction
+page. If you click in the middle of the image then you can visite the Text page. This is an example of different linking in a same page.</p>
+<br/><hr color="Black"/>
+<p align="right"><a href="htable.html"><font size="4">Next Chapter</font></a></p>
+</body>
+</html>

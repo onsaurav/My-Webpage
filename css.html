@@ -1,0 +1,291 @@
+<HTML>
+<HEAD>
+<TITLE>Css Page</TITLE>
+<STYLE>
+<!--
+body {
+background-image:url();
+background-color:#ffffff;
+color:#000000;
+background-repeat:no-repeat;
+background-attachment : fixed;
+}
+p
+{
+font-size:18;
+color:#000000;
+}
+marquee
+{
+width:100%;
+filter:glow(color=black,strength=5);
+marquee-attachment:slide;
+}
+h1
+{
+color:#000000;
+}
+h3
+{
+color:#000000;
+}
+.i { color: red;font-size:25; }
+-->
+</STYLE>
+</HEAD>
+<BODY>
+<font size="5"color="white">
+<marquee direction="left" behavior="slide" scrollamount="5"> 
+CSS Tutorial</marquee></font>
+<br><br>
+Css (Cascading Style Sheet) is use to create a HTML page with some extra effect. All the tags of CSS 
+are write under a tag &lt STYLE &gt &nbsp &nbsp &lt /STYLE &gt. That &lt STYLE &gt tags are stays 
+inside of  &lt HEAD &gt tags. Every tag has three parts. Like this , selector { property : value; }. 
+All HTML tags can acts as selector. Selector P is use for indecate paragraph. <br>
+<h3>Tags with CLASS</h3>
+We also can use class with a tag. Suppose We declar a class of p name s, then inside of style that will bw as 
+<b><font color="blue">p.s { property : value; }</font></b>.
+When we use this tag in side of body then we write as <b><font color="blue"> &lt p class="s"  &gt</font></b>.
+We also can declar the class individualy. Then we can use this with any tags. The individual is as like as 
+<b><font color="blue">.s { property : value;)</font></b>. The use of this class is same as befour. <br>
+<h3>Tags with ID</h3>
+Id select is as like as case. The delaration of an id is as follows <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp#par1 { color:red;}<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp#par1 { color:green;}<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspp#par1 { color:blue;} or,<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp#par1 { color:red}<br>
+Using those id<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt p.id="par1"> &lt /p><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt p.id="par2"> &lt /p><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt p.id="par3"> &lt /p><br>
+<h3>Tags with Pseudo-Classes</h3>
+<h1 align="center">Some Tags of Css</h1>
+<p class="i">Fonts and Texts:</p>
+Fonts and text of CSS. In CSS we can present the text as an intersting way. 
+possibality property and value of font and text are given below with p { }. Selector P is use for indecate paragraph. 
+<p>
+<font color="#000000">P</font> {<br>
+&nbsp&nbsp&nbsp    text-indent:<font color="green">3em;</font><br>
+&nbsp&nbsp&nbsp    color:<font color="green">colorname/ #------/rgb(255,255,255)/rgb(100%,100%,100%)</font><br>
+&nbsp&nbsp&nbsp    font-style: <font color="green">normal, italic, or oblique;</font><br>
+&nbsp&nbsp&nbsp    font-varient: <font color="green">normal or small-caps;</font><br>
+&nbsp&nbsp&nbsp    font-weight: <font color="green">normal, bold, bolder, lighter;</font><br>
+&nbsp&nbsp&nbsp    font-size: <font color="green">pt/em;</font><br>
+&nbsp&nbsp&nbsp    font-height: <font color="green">pt/em</font><br>
+&nbsp&nbsp&nbsp    font-family:<font color="green">Times, sans-serif;arial;</font> <br>
+&nbsp&nbsp&nbsp    line-height : <font color="green">pt/em</font><br>
+&nbsp&nbsp&nbsp    letter-spacing : <font color="green">pt/em</font><br>
+&nbsp&nbsp&nbsp    word-spacing : <font color="green">pt/em</font><br>
+&nbsp&nbsp&nbsp    text-align : <font color="green">left, center, right, or justify</font><br>
+&nbsp&nbsp&nbsp    text-transform  : <font color="green">capitalize/uppercase or none</font><br>
+&nbsp&nbsp&nbsp    text-decoration  : <font color="green">underline, overline, line-through, and blink. </font><br>
+
+&nbsp&nbsp&nbsp}
+</p>
+
+<p class="i">Background and color:</p>
+We can change the background by using Css. The possibol effect of background what we can make by css are as follows. 
+<p>
+<font color="#000000">Body</font> {<br>
+&nbsp&nbsp&nbsp    background:<font color="green">color/url(Image name.entention);(;</font><br>
+&nbsp&nbsp&nbsp    color:<font color="green">colorname/ #------/rgb(255,255,255)/rgb(100%,100%,100%)</font><br>
+&nbsp&nbsp&nbsp    background-color: <font color="green">colorname/ #------/rgb(255,255,255)/rgb(100%,100%,100%);</font><br>
+&nbsp&nbsp&nbsp    background=repeat: <font color="green">no-repeat/repeat/repeat-X/repeat-Y</font><br>
+&nbsp&nbsp&nbsp    background-attachment : <font color="green">scrol/fixed;</font><br>
+&nbsp&nbsp&nbsp    background-position : <font color="green">in px/(top,center,buttom),(left,center,right);</font><br>
+&nbsp&nbsp&nbsp}
+</p>
+
+<p class="i">Links:</p>
+Link is the main thinks of webpage designing. We can get some extra effect of links by using CSS.
+Hear we use psudo class.
+<p>
+a:link { } <font color="white">- regular link</font><br>
+a:visited { } <font color="white">- regular link already visited</font><br>
+a:hover { } <font color="white">- any link with the mouse cursor</font><br>
+a:active { } <font color="white">- the split-second a link is clicked</font>
+</p>
+We can use the propertice like text-decaration, background-color, etc and classes with links. The Example of that are given below.
+<p>
+
+
+</p>
+<p>
+<font color="black">A:link</font> {<br>
+  color : <font color="green">as a color;</font><br>
+  text-decoration:<font color="green">text-decoration;</font><br>
+  background-color: <font color="green">as a color;</font><br>
+ &nbsp&nbsp&nbsp}
+</p>
+<p>
+<font color="black">A:visited</font> {<br>
+  color : <font color="green">as a color;</font><br>
+  text-decoration:<font color="green">text-decoration;</font><br>
+  background-color: <font color="green">as a color;</font><br>
+ &nbsp&nbsp&nbsp}
+</p>
+<p>
+<font color="black">A:active</font> {<br>
+  color : <font color="green">as a color;</font><br>
+  text-decoration:<font color="green">text-decoration;</font><br>
+  background-color: <font color="green">as a color;</font><br>
+ &nbsp&nbsp&nbsp}
+</p>
+Use this in body<br>
+<p>
+&lta  href="<font color="gray">http://www.SWorld.com</font>"><font color="gray">SWorld.com</font>&lt/a>
+</p>
+
+<p class="i">List:</p>
+UL (Unordered List) and Ol (Ordered List). Basicaly all list components has the common propertices style. For Ul it is <b>disc, circle, square</b>
+for Ol it is <b>decimal, lower-roman, upper-roman, lower-alpha, upper-alpha, none. </b> we can set an image as a list style. To set an image as list type..
+<p>
+ul { list-style-image: url(<font color="green">picturename.extention</font>); }
+</p>
+To set a style type picture for a Ul what is inside Ul is follows
+<p>
+ul ul { list-style-image: url(<font color="green">picturename.extention</font>);}
+</p>
+For Ol and nested Ol is hear..
+<p>
+OL {<font color="green"> list-style-type: upper-roman;</font> }<br>
+OL OL {<font color="green"> list-style-type: upper-alpha; </font>}<br>
+OL OL OL { <font color="green">list-style-type: decimal;</font> }<br>
+OL OL OL OL { <font color="green">list-style-type: lower-alpha; </font>}<br>
+OL OL OL OL OL {<font color="green"> list-style-type: lower-roman; </font>}
+</p>
+Hear we get an extra opportunity to set the Ul style inside or out side.
+<p>
+&ltul style="<font color="green">LIST-STYLE: inside</font>"><br>
+&ltul style="<font color="green">LIST-STYLE: outside</font>">
+</p>
+
+<p class="i">Margin:</p>
+CSS aims to give you total control over margins, but not only for the body, but also for any block elements: lists, images, paragraphs, div's, span's, etc.
+Margin values can be fixed amounts, such as px (pixels), or % (a percentage), or set to auto. Margins work clock-wise.<br>
+If you want a page to have no margin, you could use: You Can give margin only one or two side. Then the value of other two side will be zero.
+The values will be in px or %. 
+<p>
+body {<font color="green"> margin: 0px 0px 0px 0px; </font>}<br>
+body {<font color="green"> margin: 25px 15px 10px 10px; </font>}<br>
+body {<font color="green"> margin: 10px 0px 0px 0px; </font>}<br>
+body {<font color="green"> margin: 10% 0px 0px 0px; </font>}
+</p>
+
+<p class="i">Padding:</p>
+Padding: is just like a margin, except it's the white space between the margin (and border) and the actual content. You can also use auto or a % (percentage), just like a margin.
+The four individual padding properties are padding-top, padding-right, padding-bottom, and padding-left. 
+<p>
+ p { <font color="green">padding: 5px 5px 5px 5px; </font>}
+</p>
+<p class="i">Border:</p>
+A border can be a visual separator between the margin on the outside, and the padding on the inside.
+The value can be <br>thin, medium, thick, or a numeric value and unit, such as 5px or 0.2em. 
+<p>
+p {<font color="green"> border-width: medium; </font>}<br>
+p { <font color="green">border-width: medium medium; </font>}<br>
+p { <font color="green">border-width: medium medium medium medium; </font>}
+</p>
+The values for border-style are:<br>none, dotted, dashed, solid, double, groove, ridge,inset, outset.
+<p>
+p { <font color="green">border-width: medium; border-style: dotted;</font> }
+</p>
+Border-color property. Just set it to blue: 
+<p>
+p {<font color="green"> border: medium dotted blue; </font>}
+</p>
+All of them are together.
+<p>
+p { <font color="green">border-width: medium; border-style: dotted; border-color: blue; </font>}
+</p>
+For individually borders the properties are border-top, border-right, border-bottom, and border-left. 
+<p>
+p {<font color="green"> border-left: dotted red; border-right: dashed purple; </font>}
+</p>
+
+<p class="i">Filter:</p>
+ To make a good CSS you may need to use filters. For texts you have glow(), shadow(), dropshadow(), wave(), blur() filters. Example with a class.
+
+<p>
+h1.x{<font color="green">
+width : 100%;<br>
+filter : glow(color=blue,strength=1 to 10);
+</font>
+}
+</p>
+<p>h1.x{<font color="green">
+width : 100%;<br>
+filter : blur(strength=1 to 10);
+</font>
+}
+</p>
+<p>h1.x{<font color="green">
+width : 100%;<br>
+filter : shadow(color=green);
+</font>
+}
+</p>
+<p>h1.x{<font color="green">
+width : 100%;<br>
+filter : dropshadow(color=lime);
+</font>
+}
+</p>
+<p>h1.x{<font color="green">
+width : 100%;<br>
+filter : wave(strength=1 to 10;
+</font>
+}
+</p>
+Now apply to h1
+<p>
+&lth1 class="x">Checking Filter &lt/h1>
+</p>
+For images you have gray(), xray(), invert(), alpha(), chroma() filters.
+<p>
+img.x{<font color="green">
+width : 100;
+height : 100;
+filter : gray();
+</font>
+}
+</p>
+<p>img.x{<font color="green">
+width : 100;
+height : 100;
+filter : xray();
+</font>
+}
+</p>
+<p>
+img.x
+{<font color="green">
+width : 100;
+height : 100;
+filter : invert();
+</font>
+}
+</p>
+<p>img.x{<font color="green">
+width : 100;
+height : 100;
+filter : alpha(opacity=0 to 100);
+</font>
+}
+</p>
+<p>img.x{<font color="green">
+width : 100;
+height : 100;
+filter : chroma(color=#000000);
+</font>
+}
+</p>
+Now apply to Image
+<p>
+&lt img class="x" src="synergy.jpg" width="240" height="180">
+</p>
+<p align="right">
+<font color="blue"size="5">Thank You!</font>
+</p>
+</BODY>
+</HTML>
